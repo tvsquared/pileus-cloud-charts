@@ -11,7 +11,8 @@ data:
             "cluster_name": "{{ .Values.config.clusterName }}",
             "metrics_collection_interval": {{ .Values.config.collectionInterval }},
             "tag_service": {{ .Values.config.tagService }},
-            "disable_metric_extraction": true
+            "disable_metric_extraction": true,
+            "retention_in_days": {{ .Values.config.retention_in_days }},
           }
         },
         "force_flush_interval": 5
